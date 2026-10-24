@@ -21,3 +21,7 @@ Implement authenticated APIs, owner-scoped storage, separately authorized provid
 ## Validation
 
 All seven JavaScript files pass node --check. Referenced local assets and the packaged ZIP were checked. Browser behavior, AWS deployment headers, authentication and live data imports have not been verified in production.
+
+## Public demo privacy
+
+This public source has been sanitized: personal start/birthday milestones, salary goals, job/visa context, historical financial references and religious preferences were removed. January 2027–2028 dates and all chart/Body Lab values are fictional examples. Columbus is the requested example city. No connected account records, health measurements, credentials or private uploads are included.

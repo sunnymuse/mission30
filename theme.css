@@ -1,0 +1,93 @@
+/* MISSION 30 // OBSIDIAN GOLD visual system V0.5 */
+:root {
+  color-scheme:dark;
+  --bg:#0B1019; --panel:#17212D; --primary:#F3B96B; --secondary:#50D9D0; --tertiary:#A594EE;
+  --line:#354252; --text:#EDF0F3; --muted:#9EADBB;
+  --cyan:#F3B96B; --cyan-soft:#F3B96B40; --amber:#F3B96B;
+  --accent:#F3B96B; --accent-rgb:243,185,107;
+}
+html,body {background:#0B1019;color:var(--text)}
+body {selection-color:#17212D}
+::selection {background:#F3B96B;color:#0B1019}
+.app {background:radial-gradient(ellipse at 57% 35%,#20242F 0%,#111923 48%,#0B1019 83%)}
+.ambient-a{background:#936A3B;opacity:.12}.ambient-b{background:#375C62;opacity:.14}
+.rail{background:linear-gradient(180deg,#151D28f0,#0B1019f5);border-right-color:#36404F}
+.rail-head .hex-brand{background:linear-gradient(130deg,#F3B96B33,#17212D)}
+.hex-brand:before {background:#1A2531}.hex-brand span {color:#F3B96B}
+.rail-wordmark{color:#B9A484}.rail-wordmark b{color:#F7F1E8}
+.rail-divider,.topbar{border-color:#354252}
+.rail-item:hover,.rail-item.active{background:linear-gradient(100deg,#352A23,#1C2733);border-color:#765B3E;color:#FAE0B6;box-shadow:inset 2px 0 var(--accent),0 0 19px #F3B96B12}
+.rail-icon{color:#F3B96B}.top-title h1{color:#F5F2EE}.top-title em,.top-slash {color:#F3B96B}
+.bunny-top{border-color:#71659A;background:linear-gradient(135deg,#302A46,#1D2235);color:#E0D8FF;box-shadow:0 0 24px #A594EE18}
+.bunny-top:hover{background:#3B3255}.bunny-top span:first-child {color:#B9ABFA}
+.chip{background:#45332244;border-color:#8B6743;color:#F3B96B}
+.icon-button{background:#17212D;border-color:#415164;color:#DAD9D3}.icon-button:hover{border-color:#F3B96B;color:#F3B96B}
+.command-zone{border-color:#725943;background:radial-gradient(ellipse at 50% 46%,#3F312557 0%,#17212Deb 46%,#111821 94%);box-shadow:inset 0 0 95px #F3B96B09,0 12px 50px #0006}
+.zone-grid{background-image:linear-gradient(#E6B5700b 1px,transparent 1px),linear-gradient(90deg,#E6B5700b 1px,transparent 1px)}
+.zone-heading strong,.zone-heading{color:#D9D7D3}.zone-live,.cross-small{color:#F3B96B}
+.scanning-line{background:linear-gradient(90deg,transparent,#F3B96B56,transparent)}
+.system-card{background:linear-gradient(115deg,#28303Dce,#171F2Ba8);border-color:#465061;color:#E9E9EC;box-shadow:inset 3px 0 #F3B96B28}
+.system-card:before {border-color:#D4A76F}
+.system-card:hover,.system-card.active{background:linear-gradient(115deg,#42362Bdd,#202832);box-shadow:inset 3px 0 var(--accent),0 0 25px rgba(var(--accent-rgb),.18)}
+.system-title{color:#F3F1ED}.stack-header{color:#BBAE9B;border-color:#4A4850}
+.core-halo{background:radial-gradient(circle,#F3B96B32 0%,#B4884A16 27%,transparent 65%)}
+.core-target{background:radial-gradient(circle,#282521d6 0%,#1B202A90 65%,transparent 77%)}
+.core-label{color:#F8F0DF;text-shadow:0 0 32px #F3B96B8A}
+.core-label span,.core-small{color:#F3B96B}
+.core-status,.core-coord,.interaction-hint{color:#B1A594}
+.bunny-message,.bunny-message-panel,.telemetry-card,.timeline-card{border-color:#465061}
+.progress-number,.prominent .strip-value{color:#F3B96B}
+.primary-action{background:#F3B96B;color:#0B1019}
+.console-hero{border-color:#71659A;background:#28283F}.orb-mini{color:#C1B1FF;border-color:#A594EE;background:radial-gradient(circle,#A594EE77,#17212D);box-shadow:0 0 28px #A594EE45}
+.console-hero b,.bunny-star{color:#C9BEFF}.transcript-msg.agent{background:#242637;border-color:#665D86}
+.transcript-msg.user{background:#2B2C33;border-color:#5A5368}
+.mobile-nav{background:#111A25f6;border-top-color:#725943}
+.mobile-nav button.active span,.mobile-nav button.active{color:#F3B96B}
+.mobile-more-panel{background:#17212D;border-color:#6D5A44}
+.mobile-more-panel button{background:#222D39;border-color:#4A5361;color:#F0EAE1}
+/* Shared analytics screen and graph treatments */
+.an-page{color:#EDF0F3}
+.an-hero{border-color:#545463;background:radial-gradient(circle at 80% 45%,color-mix(in srgb,var(--system-color) 13%,transparent),transparent 40%),linear-gradient(105deg,#222D3B,#121923 65%,#1D2630);box-shadow:inset 0 0 45px #A594EE07}
+.an-hero h2,.an-kpi strong,.an-panel h3{color:#F2F0EA}
+.an-kpi,.an-panel{border-color:#3B4958;background:linear-gradient(145deg,#1E2B38,#151E29 80%)}
+.an-segments,.an-chart-type{border-color:#414D5B;background:#111A25}
+.an-segments button.selected,.an-vbtn.selected{background:color-mix(in srgb,var(--system-color) 25%,#17212D);color:#FFF4E4}
+.an-chart-foot,.an-small-note,.an-task{border-color:#3D4957}
+.an-bunny-insight{background:radial-gradient(circle at 90% 10%,#393153,#1B2231 70%)}
+.an-bunny-mark{color:#A594EE}
+.an-insight-btn{border-color:#8773AA;color:#DDD6FF}
+.an-insight-btn:hover{border-color:#A594EE}
+.an-donut-hole{background:#111A25;border-color:#3C4959}
+/* Body Lab: teal avatar with champagne gold checkpoints */
+.bl-shell{--bl:#50D9D0;border-color:#3B736E;background:radial-gradient(ellipse at 50% 18%,#25443Faa,#111821 75%)}
+.bl-header{border-bottom-color:#42505F}.bl-overline,.bl-sidehead,.bl-mini-head{color:#8AE8DA}
+.bl-canvas-panel{background:radial-gradient(circle at 50% 47%,#50D9D022,#11192300 69%)}
+.bl-stage.active{border-color:#F3B96B;background:#392F2A;box-shadow:inset 3px 0 #F3B96B,0 0 15px #F3B96B17}
+.bl-stage:hover{border-color:#F3B96B}.bl-view.selected{border-color:#F3B96B;color:#FFE3B6;background:#382E2B}
+.bl-energy{accent-color:#50D9D0}.bl-energy-meter i.active{background:#50D9D0;box-shadow:0 0 10px #50D9D088;border-color:#89EFE1}
+.bl-toggle input{accent-color:#F3B96B}.bl-timeline{accent-color:#F3B96B}.bl-note{border-color:#50D9D0;background:#1B373A}
+.bl-mini-chart{border-color:#3D545C;background:#1A2833}.bl-mini-head small{color:#F3B96B}
+/* Columbus Life Calendar: champagne gold interactive selection; teal free-time radar */
+.cal-hero{border-color:#5B523F;background:radial-gradient(circle at 85% 50%,#97724421,transparent 34%),linear-gradient(114deg,#242932,#171F29 71%,#1D2830)}
+.cal-hero h2,.cal-toolbar h3,.cal-panel-header h3{color:#F2F0EA}
+.cal-hero .cal-kicker{color:#F3B96B}.cal-mini-chip{border-color:#665A48;color:#D7C6AC;background:#2A2B30}
+.cal-panel,.cal-stat{border-color:#3F4D5C;background:linear-gradient(145deg,#1C2936,#131C27)}
+.cal-solid-btn,.cal-view-buttons button.active{background:#F3B96B;border-color:#F3B96B;color:#131923}
+.cal-solid-btn:hover{background:#FFD39A}
+.cal-day.selected,.cal-weekcol.selected{border-color:#F3B96B;background:#342B29}
+.cal-day.today .cal-daynum{background:#F3B96B;color:#111923;box-shadow:0 0 14px #F3B96B64}
+.cal-day:hover,.cal-weekcol:hover{border-color:#F3B96B;background:#2A313C}
+.cal-vibe.active{background:#3A302C;border-color:#F3B96B;color:#F6E1C7}
+.cal-radar-core{background:radial-gradient(circle,#448481,#1D2C38 75%);box-shadow:0 0 27px #50D9D055;border-color:#50D9D0;color:#D0FFF6}
+.cal-radar:before,.cal-radar:after{border-color:#50D9D088}
+.cal-radar-sweep{background:conic-gradient(from 0deg,#50D9D04a,transparent 65deg,transparent)}
+.cal-radar-icon{border-color:#50D9D0;background:#204347;color:#8EF2E5}
+.cal-slot{border-color:#496A71;background:#1E3440}.cal-slot strong,.cal-idea-bottom span{color:#74E0B5}
+.cal-idea{background:linear-gradient(135deg,#253341,#1A2531);border-color:#435664}
+.cal-idea-bottom button{background:#32483F;border-color:#50D9D0;color:#DDF7EF}.cal-idea-bottom button:hover{background:#426A60}
+.cal-preview-alert{border-color:#806747;background:#34281d99;color:#E9CFAB}
+.cal-preview-alert button{background:#F3B96B;color:#111923}
+.cal-modal-panel{background:#17212D}
+.cal-icon-btn,.cal-outline-btn{background:#222F3C;border-color:#516271;color:#E1E8E9}
+.cal-icon-btn:hover,.cal-outline-btn:hover{border-color:#F3B96B;background:#383430}
+@media(max-width:740px){.mobile-nav{background:#121922f7;border-top-color:#725943}}

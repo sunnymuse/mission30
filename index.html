@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0B1019" />
+  <meta name="description" content="Mission 30 — The High Life. A cinematic prototype for a personal life operating system." />
+  <title>MISSION 30 // THE HIGH LIFE</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./analytics.css" />
+  <link rel="stylesheet" href="./bodylab.css" />
+  <link rel="stylesheet" href="./calendar.css" />
+  <link rel="stylesheet" href="./theme.css" />
+  <link rel="stylesheet" href="./vault.css" />
+</head>
+<body>
+  <div role="note" style="position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#17130d;color:#ebcb98;text-align:center;padding:7px;font:12px sans-serif">PREVIEW · DEMO DATA · Health/bank imports disabled · Use fictional values only</div>
+  <div id="app" class="app">
+    <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+    <aside class="rail" aria-label="Primary navigation">
+      <div class="rail-head"><div class="hex-brand"><span>M</span></div><span class="rail-wordmark">MISSION<br/><b>30</b></span></div>
+      <div class="rail-divider"></div>
+      <nav id="side-nav" class="rail-nav" aria-label="Life systems">
+        <button class="rail-item active" data-system="overview" title="Overview" aria-label="Overview"><span class="rail-icon">◈</span><span>OVERVIEW</span></button>
+        <button class="rail-item" data-system="career" title="Career engine"><span class="rail-icon">⌘</span><span>CAREER</span></button>
+        <button class="rail-item" data-system="finance" title="Financial recovery"><span class="rail-icon">◇</span><span>FINANCE</span></button>
+        <button class="rail-item" data-system="credit" title="Credit rebuild"><span class="rail-icon">▣</span><span>CREDIT</span></button>
+        <button class="rail-item" data-system="fitness" title="Body lab"><span class="rail-icon">⌁</span><span>BODY LAB</span></button>
+        <button class="rail-item" data-system="discipline" title="Mind and discipline"><span class="rail-icon">◉</span><span>MIND</span></button>
+        <button class="rail-item" data-system="spirit" title="Spirit core"><span class="rail-icon">✧</span><span>SPIRIT</span></button>
+        <button class="rail-item" data-system="calendar" title="Life calendar"><span class="rail-icon">▦</span><span>CALENDAR</span></button>
+        <button class="rail-item" data-system="vault" title="Data Vault"><span class="rail-icon">▥</span><span>DATA VAULT</span></button>
+      </nav>
+      <div class="rail-footer"><span class="status-dot"></span><span>LOCAL PROTOTYPE</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="top-title"><div class="micro-heading"><span class="live-mini"></span> PROJECT NEW LIFE <span class="slash">/</span> PERSONAL OPERATING SYSTEM</div><h1>THE HIGH LIFE <span class="top-slash">//</span> <em>MISSION 30</em></h1></div>
+        <div class="top-actions"><span class="chip chip-demo" id="data-mode-chip">● LOCAL SANDBOX</span><button class="icon-button" type="button" id="refresh-view" aria-label="Refresh current view" title="Refresh this view without reloading the browser">⟳</button><button class="icon-button" id="settings-btn" aria-label="Display settings" title="Display settings">⚙</button><button class="bunny-top" id="bunny-open" type="button"><span>✦</span> ASK BUNNY <span class="chev">↗</span></button></div>
+      </header>
+
+      <section class="mission-strip overview-only" aria-label="Mission metrics">
+        <div class="strip-cell"><div class="tiny-label">MISSION PHASE</div><div class="strip-value">01 <span class="muted">/ STABILIZE</span></div></div>
+        <div class="strip-cell"><div class="tiny-label">STARTED</div><div class="strip-value smaller">01 JAN 2027</div></div>
+        <div class="strip-cell"><div class="tiny-label">TARGET DATE</div><div class="strip-value smaller">01 JAN 2028</div></div>
+        <div class="strip-cell prominent"><div class="tiny-label">TIME TO MISSION 30</div><div class="strip-value" id="countdown">---<span class="unit">D</span> --<span class="unit">H</span> --<span class="unit">M</span></div></div>
+        <div class="strip-cell strip-last"><div class="tiny-label">DATA PIPELINE</div><div class="strip-value link-light" id="data-mode-strip"><span class="mini-status"></span> LOCAL SANDBOX</div></div>
+      </section>
+
+      <section class="command-zone overview-only" aria-label="Holographic command center">
+        <div class="zone-grid" aria-hidden="true"></div>
+        <div class="zone-heading"><span>SYS.00 <span class="sep">—</span> <strong id="zone-title">MISSION COMMAND</strong></span><span class="zone-heading-right">INTERACTIVE 3D CORE <span class="cross-small">✛</span> <span class="zone-live">RENDER ENGINE</span></span></div>
+        <div class="scanning-line" aria-hidden="true"></div>
+
+        <div class="command-content">
+          <div class="left-stack systems-stack" id="left-stack">
+            <div class="stack-header"><span>THE SIX PILLARS</span><span>01 — 03</span></div>
+            <button class="system-card" data-system="career" style="--i:0"><span class="sys-number">01</span><span class="card-content"><span class="system-title">CAREER ENGINE</span><small>Skills · Impact · Reliability</small></span><span class="sys-arrow">↗</span></button>
+            <button class="system-card" data-system="finance" style="--i:1"><span class="sys-number">02</span><span class="card-content"><span class="system-title">FINANCIAL CORE</span><small>Debt · Cash flow · Savings</small></span><span class="sys-arrow">↗</span></button>
+            <button class="system-card" data-system="credit" style="--i:2"><span class="sys-number">03</span><span class="card-content"><span class="system-title">CREDIT REBUILD</span><small>Reports · Payments · Recovery</small></span><span class="sys-arrow">↗</span></button>
+            <div class="stack-micro"><span class="pulse-line"></span> MODULE INPUTS READY <span class="stack-micro-muted">/ SOURCE SYNC PENDING</span></div>
+          </div>
+
+          <div class="core-space" id="core-space" aria-label="Interactive three-dimensional mission reactor; drag to rotate">
+            <div class="core-halo"></div>
+            <div class="core-ruler core-ruler-left"><span>∣</span><span>∣</span><span>∣</span><span>∣</span><span>∣</span><span>∣</span></div>
+            <canvas id="reactor" aria-label="Real-time 3D holographic rotating reactor" role="img"></canvas>
+            <div class="css-reactor-fallback" id="reactor-fallback" hidden aria-hidden="true"><div class="fake-ring fake-ring-one"></div><div class="fake-ring fake-ring-two"></div><div class="fake-ring fake-ring-three"></div></div>
+            <div class="core-target"><span class="core-small" id="core-tag">MISSION REACTOR / 001</span><span class="core-label" id="core-label">M<span>∕</span>30</span><span class="core-small core-status" id="core-status">CHAPTER ONE · THE HIGH LIFE</span></div>
+            <div class="core-bracket top-left"></div><div class="core-bracket top-right"></div><div class="core-bracket bottom-left"></div><div class="core-bracket bottom-right"></div>
+            <span class="core-coord coord-a">N 35.2271°</span><span class="core-coord coord-b">REBUILDING // ACTIVE</span>
+            <div class="interaction-hint" id="interaction-hint"><span>⤧</span> DRAG TO ROTATE <span class="hint-separator">/</span> SELECT A SYSTEM</div>
+          </div>
+
+          <div class="right-stack systems-stack" id="right-stack">
+            <div class="stack-header"><span>PERSONAL SYSTEMS</span><span>04 — 06</span></div>
+            <button class="system-card" data-system="fitness" style="--i:3"><span class="sys-number">04</span><span class="card-content"><span class="system-title">BODY LAB</span><small>Activity · Sleep · Strength</small></span><span class="sys-arrow">↗</span></button>
+            <button class="system-card" data-system="discipline" style="--i:4"><span class="sys-number">05</span><span class="card-content"><span class="system-title">MIND & DISCIPLINE</span><small>Routine · Focus · Calm</small></span><span class="sys-arrow">↗</span></button>
+            <button class="system-card" data-system="spirit" style="--i:5"><span class="sys-number">06</span><span class="card-content"><span class="system-title">SPIRIT CORE</span><small>Reflection · Gratitude · Meaning</small></span><span class="sys-arrow">↗</span></button>
+            <div class="stack-micro"><span class="pulse-line"></span> GROWTH IS NONLINEAR <span class="stack-micro-muted">/ SHOW UP DAILY</span></div>
+          </div>
+        </div>
+        <div class="command-bottom"><div><span class="command-dot"></span> 6 SYSTEMS <span class="ghost">/</span> 1 MISSION</div><button class="text-button" id="reset-overview" type="button">RETURN TO CORE <span>↶</span></button><div>INTERFACE V0.6 <span class="ghost">—</span> VAULT READY</div></div>
+      </section>
+
+      <section class="telemetry overview-only" aria-label="Mission telemetry and assistant">
+        <div class="telemetry-card timeline-card"><div class="panel-head"><span>TRANSFORMATION TIMELINE</span><span class="dim">TIME ELAPSED / NOT LIFE SCORE</span></div><div class="timeline-labels"><span>JAN 01, 2027<br/><b>SAMPLE START</b></span><span class="progress-number" id="elapsed-pct">0.0%</span><span class="align-right">JAN 01, 2028<br/><b>MISSION 30</b></span></div><div class="timeline-track"><div id="timeline-fill" class="timeline-fill"></div><div class="milestone-mark m25"><span>25%</span></div><div class="milestone-mark m50"><span>50%</span></div><div class="milestone-mark m75"><span>75%</span></div></div><div class="timeline-caption"><span>DISCIPLINE IS COMPOUNDING</span><span id="time-note">CALCULATING…</span></div></div>
+        <div class="telemetry-card bunny-card"><div class="panel-head"><span><span class="bunny-star">✦</span> BUNNY // MISSION INTELLIGENCE</span><span class="tag-placeholder">SCRIPTED DEMO</span></div><div class="bunny-message" id="bunny-message">Explore career, budget and wellness demo modules. Small consistent actions create the progress we can eventually measure.</div><div class="bunny-actions"><button id="briefing-btn" type="button">READ BRIEFING <span>↗</span></button><button id="open-console" type="button">OPEN AI CONSOLE <span>⌁</span></button></div></div>
+      </section>
+      <section id="analytics-workspace" aria-label="Full-screen life system analytics workspace" hidden></section>
+      <section id="calendar-workspace" aria-label="Life calendar and free time radar" hidden></section>
+      <section id="vault-workspace" aria-label="Private mission entries and progress" hidden></section>
+      <footer class="page-footer overview-only"><span>MISSION 30 © 2026 <span class="footer-sep">◈</span> THE HIGH LIFE</span><span>DEMO PROTOTYPE / INTEGRATIONS NOT CONNECTED / AGENT OFFLINE</span></footer>
+    </main>
+
+    <div class="mobile-nav" aria-label="Mobile primary navigation"><button data-system="overview" class="active"><span>◈</span>HOME</button><button data-system="calendar"><span>▦</span>PLAN</button><button data-system="finance"><span>◇</span>MONEY</button><button data-system="fitness"><span>⌁</span>BODY</button><button data-system="vault" type="button"><span>▥</span>DATA</button><button id="mobile-menu" type="button"><span>☷</span>MORE</button></div>
+    <div id="mobile-more-panel" class="mobile-more-panel" hidden aria-label="Other life systems"><button data-system="career">⌘ &nbsp; CAREER ENGINE</button><button data-system="credit">▣ &nbsp; CREDIT REBUILD</button><button data-system="discipline">◉ &nbsp; MIND & DISCIPLINE</button><button data-system="spirit">✧ &nbsp; SPIRIT CORE</button><button data-system="vault">▥ &nbsp; DATA VAULT</button></div>
+
+    <div id="module-overlay" class="overlay" hidden><div class="overlay-backdrop" data-close="module"></div><section class="module-panel" role="dialog" aria-modal="true" aria-labelledby="module-title"><div class="module-head"><div><div class="tiny-label">MISSION 30 / SYSTEM INSPECTION <span class="slash">/</span> DEMO VIEW</div><h2 id="module-title">SYSTEM</h2></div><button class="close-btn" aria-label="Close system" data-close="module">×</button></div><div class="module-body"><div class="module-visual"><div class="module-orbit orbit-one"></div><div class="module-orbit orbit-two"></div><div class="module-orbit orbit-three"></div><div class="module-orbit-center"><span id="module-symbol">✧</span><small id="module-central-label">MODULE ONLINE</small></div></div><div class="module-descriptor"><div class="tiny-label">SYSTEM OBJECTIVE</div><p id="module-description"></p></div><div class="module-section-title"><span>INSTRUMENTS</span><span class="demo-mini">SAMPLE / UNSYNCED</span></div><div class="metric-grid" id="module-metrics"></div><div class="module-section-title"><span>MISSION SUBSYSTEMS</span><span>EXPLORE</span></div><div class="subsystems" id="module-subsystems"></div><div class="module-actions"><button id="simulate-btn" class="primary-action" type="button">SIMULATE DATA UPDATE <span>↗</span></button><button data-close="module" class="secondary-action" type="button">BACK TO COMMAND</button></div><p class="privacy-note" id="module-note">Sample values only. No financial or health accounts are connected.</p></div></section></div>
+
+    <div id="console-overlay" class="overlay" hidden><div class="overlay-backdrop" data-close="console"></div><section class="console-panel" role="dialog" aria-modal="true" aria-labelledby="console-title"><div class="module-head"><div><div class="tiny-label">PERSONAL INTELLIGENCE INTERFACE / V0.5</div><h2 id="console-title"><span class="bunny-star">✦</span> BUNNY CONSOLE</h2></div><button class="close-btn" aria-label="Close Bunny console" data-close="console">×</button></div><div class="console-hero"><div class="orb-mini">✦</div><div><b>STRATEGIC ADVISOR / SCRIPTED PROTOTYPE</b><p>This is a visual interaction demo. It is not calling an AI model or reading live accounts.</p></div></div><div class="transcript" id="transcript" aria-live="polite"><div class="transcript-msg agent">Our purpose is to make your daily decisions visible, measurable, and less overwhelming. Choose a demonstration briefing below.</div></div><div class="suggestion-grid"><button data-prompt="today" type="button">What should I focus on today?</button><button data-prompt="finance" type="button">What's my financial priority?</button><button data-prompt="career" type="button">How can I grow as an AI engineer?</button><button data-prompt="health" type="button">What should Body Lab track?</button></div><div class="console-footer">AUTOMATED CHAT & LIVE TOOL ACCESS WILL BE ADDED AFTER AUTHENTICATION AND INTEGRATIONS.</div></section></div>
+
+    <div id="settings-overlay" class="overlay" hidden><div class="overlay-backdrop" data-close="settings"></div><section class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title"><div class="module-head"><div><div class="tiny-label">INTERFACE CONTROLS</div><h2 id="settings-title">DISPLAY SETTINGS</h2></div><button class="close-btn" aria-label="Close settings" data-close="settings">×</button></div><div class="settings-body"><label class="settings-row"><span><b>Reduced motion</b><small>Minimize rotating rings and transitions</small></span><input type="checkbox" id="reduce-motion" /></label><label class="settings-row"><span><b>Power saver</b><small>Lower graphics resolution and particle count</small></span><input type="checkbox" id="power-saver" /></label><div class="settings-note"><strong>Privacy &amp; cloud storage</strong><p>Data Vault uses local browser storage in sandbox mode. Configure Supabase authentication and owner-only database policies before saving real financial or health measurements. Calendar and avatar preferences still save separately in this browser.</p></div></div></section></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </div>
+  <script src="./bodylab.js" defer></script>
+  <script src="./calendar.js" defer></script>
+  <script src="./analytics.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script src="./reactor.js" defer></script>
+  <script src="./config.js" defer></script>
+  <script src="./vault.js" defer></script>
+</body>
+</html>
